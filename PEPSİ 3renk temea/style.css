@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif ;
+}
+section
+{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    background: #0062be;
+    transition: 0.5s;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul
+{
+    display: flex;
+    list-style: none;
+}
+header ul li 
+{
+    display: inline-block;
+}
+header ul li a
+{
+ color: #fff;
+ text-decoration: none;
+ font-weight: 400;
+ margin-left: 40px;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.textBox
+{
+    position: relative;
+    max-width: 600px;
+}
+.textbox h2
+{
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.textbox h2 span
+{
+    font-size: 2em;
+}
+.textbox p
+{
+    color: #fff;
+}
+.textbox a
+{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.content .imgBox
+{
+    width: 600px;
+    display: flex;
+    padding-right: 150px;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.content .imgBox img
+{
+    max-width: 260px;
+}
+.thumb
+{
+   position: absolute;
+   left: 50%;
+   bottom: 10px;
+   transform: translateX(-50%);
+   display: flex;
+}
+.thumb li 
+{
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+    margin:0 20px;
+}
+.thumb li  img
+{
+    max-width: 40px;
+}
+.thumb li :hover
+{
+    transform: translateY(-15px);
+}
