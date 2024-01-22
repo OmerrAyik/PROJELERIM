@@ -1,0 +1,57 @@
+body
+{
+background-color: black;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card
+{
+    background-color: white;
+    width: 270px;
+    height: 450px; 
+    margin: 10px;
+    border-radius: 15px;
+}
+.image
+{
+    background-color: aqua;
+    height: 170px;
+    border-radius: 15px 15px 0 0;
+}
+.car-1
+{
+    background-image:url(img/grahame-jenkins-p7tai9P7H-s-unsplash.jpg);
+    background-size: cover;
+}
+.car-2
+{
+    background-image:url(img/jose-carbajal-8xyki0bqvgw-unsplash.jpg);
+    background-size: cover;
+}
+.car-3
+{
+    background-image:url(img/josh-berquist-_4sWbzH5fp8-unsplash.jpg);
+    background-size: cover;
+}
+.button
+{
+    width: 120px;
+    padding: 15px 20px;
+    background-color: yellow;
+    color: black;
+    border-radius: 15px;
+    margin: 20px 50px;
+    text-align: center;
+}
+.card:hover
+{
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
