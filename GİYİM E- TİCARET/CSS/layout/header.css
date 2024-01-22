@@ -1,0 +1,271 @@
+/*! Header Start */
+.global_notification {
+    background-color: #1367EF;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.global_notification a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header {
+    border-bottom: 1px solid #dee0ea;
+    position: relative;
+}
+
+.header-row {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-mobile {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+.header-center .bi-x-circle
+{
+    display: none;
+}
+
+
+.header-center .navigation .menu-list {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.header-center .menu-list .menu-list-item {
+    display: flex;
+    position: relative;
+    height: 90px;
+    align-items: center;
+}
+
+.header-center .menu-list .menu-link {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    position: relative;
+}
+
+.header-center .menu-list .menu-link::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: #1367EF;
+    transform: translate(-50%);
+    transition: .2s ease width;
+}
+
+.header-center .menu-list .menu-list-item:hover .menu-dropdown-wrapper {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-center .menu-list .menu-link.active::after {
+    width: 100%;
+}
+
+.header-center .menu-list .menu-link i {
+    font-size: 14px;
+}
+
+.header-right .header-right-links {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.header-right .bi-person {
+    font-size: 23px;
+}
+
+.header-right .toggle-button {
+    border: none;
+    background-color: transparent;
+}
+
+.header-right i {
+    font-size: 18px;
+    display: flex;
+}
+
+.header-right .header-cart {
+    position: relative;
+}
+
+.header-right .header-cart-link .header_card_count {
+    width: 16px;
+    height: 16px;
+    background-color: #1367EF;
+    border-radius: 100%;
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+
+}
+
+/*? Menu Dropdown Menu start*/
+.menu-dropdown-wrapper {
+    position: absolute;
+    top: 100%;
+    left: -30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease;
+    z-index: 1;
+}
+
+.menu-dropdown-wrapper .menu-dropdown-content {
+    width: 220px;
+    background-color: #fff;
+    border: 1px solid #dee0ea;
+    border-top: unset;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0;
+}
+
+.menu-dropdown-wrapper .menu-dropdown-content a {
+    display: flex;
+    font-size: 16px;
+    padding: 4px 30px;
+    transition: color .2s ease;
+}
+
+.menu-dropdown-wrapper .menu-dropdown-content a:hover {
+    color: #1367EF;
+}
+
+/*? Menu Dropdown Menu end*/
+
+/*? Menu Dropdown Mega Menu start*/
+.menu-dropdown-mega-menu {
+    background-color: white;
+    border: 1px solid #dee0ea;
+    padding: 22px;
+    display: flex;
+    column-gap: 50px;
+}
+
+.megamenu-wrapper .menu-dropdown-wrapper {
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.megamenu-wrapper {
+    position: static !important;
+
+}
+
+.megamenu-wrapper .megamenu-links {
+    display: flex;
+    column-gap: 50px;
+}
+
+.megamenu-wrapper .mega-menu-product-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.megamenu-wrapper .mega-menu-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.megamenu-wrapper .mega-menu-list a {
+    font-size: 14px;
+}
+
+.megamenu-wrapper .megamenu-single-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.megamenu-wrapper .megamenu-single-subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.megamenu-wrapper .megamenu-single-button {
+    margin-top: 5px;
+}
+
+/*? Menu Dropdown Mega Menu end*/
+
+/*! Header end */
+
+/*! Header responsive*/
+@media (max-width:650px)
+ {
+    .header-center{
+       position: fixed;
+       top: 0;
+       left: -100%;
+       border-right: 1px solid #dee0ea;
+       border-bottom: 1px solid #dee0ea;
+       background-color: #fff;
+       height:100vh;
+       z-index: 2;
+       transition: .5s all ease;
+    } 
+     .header-center .bi-x-circle
+    {
+        display:inline-block;
+        position:absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .header-center .menu-list
+    {
+        flex-direction: column;
+        padding: 50px 75px;
+    }
+  
+    .header-mobile {
+        display: inline-block;
+    }
+    header .menu-dropdown-wrapper
+    {
+        display: none !important;
+   
+    }
+    header .menu-list i
+    {
+        display:none;
+    }
+    header .menu-list-item a
+    {
+        font-size: 16px !important;
+    }
+}

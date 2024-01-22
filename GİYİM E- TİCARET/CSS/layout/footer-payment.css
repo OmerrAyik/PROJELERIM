@@ -1,0 +1,13 @@
+.footer-payment
+{
+    height: 5rem;
+}
+.footer-payment-wrapper
+{
+    display: flex;
+    justify-content: space-around;
+}
+.copyright-title
+{
+    padding: 15px;
+}

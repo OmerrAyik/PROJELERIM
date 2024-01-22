@@ -1,0 +1,33 @@
+.politic
+{
+    border-top: 1px solid #b9b6b6;
+    padding: 30px 15px;
+}
+.politic-wrapper
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.politic-wrapper .politic-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:20px;
+    cursor: pointer;
+}
+.politic-item i
+{
+    font-size: 35px;
+    padding:10px 15px;
+}
+@media (max-width:768px)
+{
+    .politic-wrapper
+    {
+        display: block;
+    }
+    
+}
