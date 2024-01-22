@@ -1,0 +1,148 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 7px;
+}
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+a
+{
+    text-decoration: none;
+}
+p
+{
+    padding: 1.6rem 0;
+}
+header
+{
+    height: 46rem;
+
+}
+header .bg-image
+{
+    position: absolute;
+    background-image: url(images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+header h1
+{
+    padding: 12rem;
+    padding-bottom: 0; 
+}
+.btn
+{
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: 1ps solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: 0.5rem 0.5rem;
+    transition: all 0.4s;
+}
+.btn:hover
+{
+    background-color: #fff;
+    color: #333;
+}
+img
+{
+    width: 100%;
+    height: auto;
+}
+.section-a
+{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem;
+}
+.section-b
+{
+    padding: 2rem;
+}
+.section-b ul
+{
+    list-style: none;
+}
+.section-b ul li
+{
+background-color: #fff;
+color: #333;
+margin-bottom: 1.5rem;
+}
+.col-content
+{
+    padding: 1.5rem;
+}
+.section-c
+{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+}
+.section-d .box
+{
+    padding: 5rem;
+}
+.section-d .box:first-child
+{
+    background-color: darkslategray;
+}
+footer
+{
+    padding:4rem;
+    background-color: black;
+}
+footer a
+{
+    color: yellowgreen;
+}
+.clear-fix::after
+{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+@media screen and (min-width:800px) /*tablet modu*/
+{
+    html
+    {
+        font-size: 9px;
+    }
+}
+@media screen and (min-width:1200px)/*pc modu*/
+{
+    html
+    {
+        font-size: 11px;
+    }
+    .section-b li
+    {
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+    .box
+    {
+        width: 50%;
+        float: left;
+    }
+}
+
