@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+    .game-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .word-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .word {
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+    }
+    .definition {
+      margin-top: 20px;
+    }
+  </style>
+  <title>Word Matching Game</title>
+</head>
+<body>
+
+  <div class="game-container">
+    <div>
+      <h1>İngilizce - Türkçe Kelime Eşleştirme Oyunu</h1>
+      <div class="word-container" id="word-container"></div>
+      <div class="definition" id="definition"></div>
+      <button onclick="checkAnswer()">Cevabı Kontrol Et</button>
+    </div>
+  </div>
+
+  <script>
+    const words = [
+      { english: "Hello", turkish: "Merhaba" },
+      { english: "Goodbye", turkish: "Hoşça kal" },
+      { english: "Apple", turkish: "Elma" },
+      { english: "Car", turkish: "Araba" },
+      // Eklemek istediğiniz kelimeleri buraya ekleyebilirsiniz.
+    ];
+
+    let shuffledWords = [];
+
+    function startGame() {
+      shuffledWords = shuffleArray(words);
+      displayWords();
+    }
+
+    function shuffleArray(array) {
+      return array.slice().sort(() => Math.random() - 0.5);
+    }
+
+    function displayWords() {
+      const wordContainer = document.getElementById("word-container");
+      wordContainer.innerHTML = "";
+
+      shuffledWords.forEach((word) => {
+        const wordDiv = document.createElement("div");
+        wordDiv.classList.add("word");
+        wordDiv.innerText = word.english;
+        wordDiv.onclick = () => selectWord(word);
+        wordContainer.appendChild(wordDiv);
+      });
+
+      const definitionDiv = document.getElementById("definition");
+      definitionDiv.innerText = "";
+    }
+
+    let selectedWord = null;
+
+    function selectWord(word) {
+      selectedWord = word;
+      const definitionDiv = document.getElementById("definition");
+      definitionDiv.innerText = `Türkçe karşılığı: ${word.turkish}`;
+    }
+
+    function checkAnswer() {
+      if (selectedWord === null) {
+        alert("Lütfen bir kelime seçin.");
+        return;
+      }
+
+      const userAnswer = prompt("Türkçe karşılığını yazın:");
+      if (userAnswer.toLowerCase() === selectedWord.turkish.toLowerCase()) {
+        alert("Doğru! Tebrikler!");
+        startGame();
+      } else {
+        alert("Yanlış cevap. Tekrar deneyin.");
+      }
+    }
+
+    // Oyunu başlat
+    startGame();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.cartcontent {
+    padding-top: 35px;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    background-color: aliceblue;
+    height: 65rem;
+}
+
+.pagetitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 30px;
+    color: #2E8CCA;
+    font-style: italic;
+}
+
+.cartgenel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.carticerik {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.picture {
+    width: 210px;
+    height: 180px;
+    border: 5px solid rgb(178, 213, 234);
+    padding: 10px;
+    margin-right: 1px;
+}
+
+.picture img {
+    width: 180px;
+    height: 150px;
+}
+
+.answer {
+    width: 210px;
+    height: 180px;
+    border: 5px solid rgb(193, 212, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #EEF3F3;
+    color: #2E8CCA;
+}
+
+#btn {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 100px;
+    cursor: pointer;
+    color: rgb(20, 133, 208);
+}
+
+#btn:hover {
+    color: rgb(78, 148, 178);
+}
+
+
+/*! Footer Start*/
+a {
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #041732;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25rem;
+    position: relative;
+    top: 180px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-left {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.footer-left h1 {
+    color: #fff;
+    font-size: 26px;
+}
+
+.footer-left h1:nth-child(2) {
+    padding-top: 15px;
+}
+
+.footer-left p {
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.footer-left button {
+    border: none;
+    padding: 10px 35px;
+    background-color: red;
+    font-size: 17px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.footer-left a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-left button:hover {
+    background: rgb(220, 58, 58);
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.footer-center a {
+    color: #ffff;
+}
+
+.footer-center .info {
+    padding-right: 45px;
+}
+
+.footer-center ul {
+    font-size: 20px;
+    list-style: none;
+}
+
+.footer-center ul li {
+    padding: 15px 30px;
+    color: #fff;
+}
+
+.footer-center ul li:hover {
+    background-color: #9fc0d6;
+    cursor: pointer;
+    transition: 1s all ease;
+}
+
+.footer-right {
+    color: #fff;
+    font-size: 25px;
+}
+
+.social-medias {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.social-medias .instagram {
+    padding: 10px 20px;
+    display: flex;
+}
+
+.social-medias .facebook {
+    padding: 10px 20px;
+    display: flex;
+}
+
+.social-medias .twitter {
+    padding: 10px 20px;
+    display: flex;
+}
+
+.social-medias span {
+    padding-right: 20px;
+}
+
+.social-medias span i {
+    font-size: 30px;
+}
+
+.social-medias .instagram:hover {
+    background-color: #9fc0d6;
+    cursor: pointer;
+    transition: 1s all ease;
+}
+
+.social-medias .facebook {
+    padding: 10px 20px;
+}
+
+.social-medias .facebook:hover {
+    background-color: #9fc0d6;
+    cursor: pointer;
+    transition: 1s all ease;
+}
+
+.social-medias .twitter {
+    padding: 10px 20px;
+}
+
+.social-medias .twitter:hover {
+    background-color: #9fc0d6;
+    cursor: pointer;
+    transition: 1s all ease;
+}
+
+/*! Footer Finish*/
+/*!Footer Start Responsive*/
+@media (max-width:768px) {
+    .footer {
+        width: 100%;
+        height: 35rem;
+        display: block;
+
+    }
+
+    .footer-content {
+        display: block;
+        justify-content: center;
+        align-self: center;
+        background-color: #041732;
+        padding-left: 50px;
+    }
+
+    .footer-left {
+        padding-left: 35px;
+    }
+
+    .footer-center ul  {
+        padding-right: 90px;
+        padding-bottom: 20px;
+        color: #fff;
+    }
+}
+
+@media (max-width:500px) {
+    .footer {
+        width: 100%;
+        height: 35rem;
+        display: block;
+    }
+
+    .footer-content {
+        display: block;
+        justify-content: center;
+        align-self: center;
+        background-color: #041732;
+        padding-left: 50px;
+    }
+
+    .footer-left {
+        padding-left: 35px;
+    }
+    .footer-center ul  {
+        padding-right: 10px;
+        padding-bottom: 20px;
+        color: #fff;
+    }
+}
+
+/*!Footer Finish Responsive*/
+
+/*! Card Start*/
+
+
+
+@media (max-width:768px) {
+    .cartgenel {
+        display: block;
+    }
+
+    .cartcontent {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-left: 40px;
+        height: 190rem;
+    }
+
+    .cartsicerik {
+        margin-bottom: 25px;
+    }
+
+    .pratik-title h1 {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width:500px) {
+    .cartcontent {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-left: 40px;
+        height: 190rem;
+    }
+
+    .cartsicerik {
+        margin-bottom: 25px;
+    }
+
+    .pratik-title h1 {
+        padding-left: 50px;
+    }
+}
+
+/*! Card Finish*/

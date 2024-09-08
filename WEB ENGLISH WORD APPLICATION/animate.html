@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="style.css">
+    <!--! Boostrap İcon cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--! style css-->
+    <!--!Font Awesome İcons start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/main.css">
+    <!--!Font Awesome İcons end-->
+
+    <!--! Jquery CDNJS START-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--! Jquery CDNJS END-->
+    <!--?Ses Dosyaları -->
+    <script src="sesler.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="üstreklam">
+            <div class="container">
+                <p>Welcome To The English Vocabulary</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="genelcontent">
+                <div class="genelmenu">
+                    <div class="mobile-buton">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="logo">
+                        <a href="index.html"><img src="resim/logo.png" alt=""></a>
+                    </div>
+                    <nav>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="index.html">Anasayfa</a></li>
+                                <li><a href="alıstırmalar.html" class="active">Alıştırmalar</a></li>
+                                <li><a href="bosluk-doldurma.html">Boşluk Doldurma</a></li>
+                                <li><a href="listening.html">Dinleme</a></li>
+                                <li><a href="animate.html">Animasyon</a></li>
+                            </ul>
+                            <i id="closes" class="bi-x-circle"></i>
+                        </div>
+                    </nav>
+
+                    <div class="header-right-links">
+                        <a href="account.html" class="header-account">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <button class="toggle-button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="animate-wrapper">
+            <div class="card">
+                <h1>Baby Room</h1>
+                <div class="word-area">
+                    <img src="animation/baby.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button data-video="animation/baby-room.mp4" class="anime-buton">See The Animation</button>
+                </div>
+            </div>
+            <div class="Modal hidden">
+                <div class="close-area">
+                    <i class="fa-solid fa-xmark closes"></i>
+                </div>
+                <video autoplay controls class="video"></video>
+            </div>
+
+            <div class="card">
+                <h1>Beed Room</h1>
+                <div class="word-area">
+                    <img src="animation/bedroom.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button data-video="animation/bedroom.mp4" class="anime-buton"><a href="">See The
+                            Animation</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Living Room</h1>
+                <div class="word-area">
+                    <img src="animation/living-room.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button data-video="animation/Living-room.mp4" class="anime-buton">See The Animation</button>
+                </div>
+            </div>
+            <div class="card">
+                <h1>kitchen</h1>
+                <div class="word-area">
+                    <img src="animation/kitchen.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button class="anime-buton"><a href="animation/bedroom.mp4">See The Animation</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="animate-wrapper">
+            <div class="card">
+                <h1>Baby Room</h1>
+                <div class="word-area">
+                    <img src="animation/baby.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button data-video="animation/baby-room.mp4" class="anime-buton">See The Animation</button>
+                </div>
+            </div>
+            <div class="Modal hidden">
+                <i class="fa-solid fa-xmark closes"></i>
+                <video class="video"></video>
+            </div>
+
+            <div class="card">
+                <h1>Beed Room</h1>
+                <div class="word-area">
+                    <img src="animation/bedroom.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button data-video="animation/bedroom.mp4" class="anime-buton"><a href="">See The
+                            Animation</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Living Room</h1>
+                <div class="word-area">
+                    <img src="animation/living-room.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button data-video="animation/Living-room.mp4" class="anime-buton">See The Animation</button>
+                </div>
+            </div>
+            <div class="card">
+                <h1>kitchen</h1>
+                <div class="word-area">
+                    <img src="animation/kitchen.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button class="anime-buton"><a href="animation/bedroom.mp4">See The Animation</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="animate-wrapper">
+            <div class="card">
+                <h1>Baby Room</h1>
+                <div class="word-area">
+                    <img src="animation/baby.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button data-video="animation/baby-room.mp4" class="anime-buton">See The Animation</button>
+                </div>
+            </div>
+            <div class="Modal hidden">
+                <i class="fa-solid fa-xmark closes"></i>
+                <video class="video"></video>
+            </div>
+
+            <div class="card">
+                <h1>Beed Room</h1>
+                <div class="word-area">
+                    <img src="animation/bedroom.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button data-video="animation/bedroom.mp4" class="anime-buton"><a href="">See The
+                            Animation</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Living Room</h1>
+                <div class="word-area">
+                    <img src="animation/living-room.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button data-video="animation/Living-room.mp4" class="anime-buton">See The Animation</button>
+                </div>
+            </div>
+            <div class="card">
+                <h1>kitchen</h1>
+                <div class="word-area">
+                    <img src="animation/kitchen.gif" alt="">
+                </div>
+                <div class="animate-button">
+                    <button class="anime-buton"><a href="animation/bedroom.mp4">See The Animation</a></button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="left-title">
+                        <h1>English Word Application</h1>
+                        <h1>For Children</h1>
+                    </div>
+                    <div class="left-info">
+                        <p>05331992489</p>
+                        <p>İstanbul Bağcılar Fatih Mah. 1830.Sok No:3 D3</p>
+                    </div>
+                    <button>
+                        <a href="index.html">Anasayfa</a>
+                    </button>
+                </div>
+                <div class="footer-center">
+                    <div class="more-info">
+                        <ul>
+                            <li><a href="animate.html">Animasyon</a></li>
+                            <li><a href="alıstırmalar.html">Kelime Kartları</a></li>
+                            <li><a href="listening.html">Listening</a></li>
+                            <li><a href="bosluk-doldurma.html">Bosluk Doldurma</a></li>
+                            <li><a href="kelime-esletirme.html">Kelime Eşleştirme</a></li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li><a href="index.html">Anasayfa</a></li>
+                            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                            <li><a href="iletisim.html">İletisim</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="social-medias">
+                        <div class="instagram">
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                            <p>Instagram</p>
+                        </div>
+                        <div class="facebook">
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <p>Facebook</p>
+                        </div>
+                        <div class="twitter">
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                            <p>Twitter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="animation.js"></script>
+</body>
+
+</html>

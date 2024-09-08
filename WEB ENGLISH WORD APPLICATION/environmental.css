@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.cards {
+    height: 90rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    
+}
+.cartsicerik
+{
+    background-color: rgb(173, 201, 230);
+    width: 410px;
+    height: 400px;
+    border-radius: 30px;
+    margin-right: 30px;
+   
+}
+.cartsicerik:hover
+{
+    transition: all 1.2s ease;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.cardsgenelcontent {
+    display: flex;
+    justify-content: center;
+
+}
+.cardscontent
+{
+    border-radius: 30px;
+    display: flex;
+    height: 25rem;
+    margin-bottom: 25px;
+}
+.pratik-title
+{
+    padding: 25px;
+    color: #2e8cca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.cardtitle
+{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 410px;
+    height: 50px;
+    background-color:rgb(37, 37, 34) ;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.cardtitle h1
+{
+    color: #ffff;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 8px;
+}
+.homereklam
+{
+    width: 155px;
+    height: 1400px;
+    background-image: url(gif/gif-for-happy-52650-129824.gif);
+}
+.wheather
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 410px;
+    height: 320px;
+    background-image: url(environmental/wheather.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Earth
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 410px;
+    height: 320px;
+    background-image: url(environmental/earth.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Plants-Tress
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 410px;
+    height: 320px;
+    background-image: url(environmental/plants.png);;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Wild-animals
+{
+    
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 410px;
+    height: 320px;
+    background-image: url(environmental/wild.png);;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Domestic-Animals
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 410px;
+    height: 320px;
+    background-image: url(environmental/domestic.png);;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.Sea-animals
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 410px;
+    height: 320px;
+    background-image: url(environmental/sea.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Space
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 410px;
+    height: 320px;
+    background-image: url(environmental/space.png);;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Buildings
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 410px;
+    height: 320px;
+    background-image: url(environmental/buildings.png);;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.housebuton
+{
+    margin-left: 30px;
+}
+
+
+
+@media (max-width:500px) {
+    .cards {
+        height: 120rem;
+    }
+    .cardscontent {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-left: 40px;
+    }
+    .cartsicerik
+    {
+        margin-bottom: 25px;
+    }
+    .pratik-title h1 {
+        padding-left: 50px;
+    }
+}
+@media (max-width:768px) {
+    .cards {
+        height: 120rem;
+    }
+    .cardscontent {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-left: 40px;
+    }
+    .cartsicerik
+    {
+        margin-bottom: 25px;
+    }
+    .pratik-title h1 {
+        padding-left: 50px;
+    }
+}
+

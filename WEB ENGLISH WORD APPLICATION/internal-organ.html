@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnternal Organ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="internal-organ.css">
+    <!--! Boostrap İcon cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--! style css-->
+    <!--!Font Awesome İcons start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/main.css">
+    <!--!Font Awesome İcons end-->
+
+    <!--! Jquery CDNJS START-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--! Jquery CDNJS END-->
+    <script src="sesler.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="üstreklam">
+            <div class="container">
+                <p>Welcome To The English Vocabulary</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="genelcontent">
+                <div class="genelmenu">
+                    <div class="mobile-buton">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html"><img src="resim/logo.png" alt=""></a>
+                    </div>
+                    <nav>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="index.html" >Anasayfa</a></li>
+                                <li><a href="alıstırmalar.html" class="active">Alıştırmalar</a></li>
+                                <li><a href="bosluk-doldurma.html">Boşluk Doldurma</a></li>
+                                <li><a href="listening.html">Dinleme</a></li>
+                                <li><a href="animate.html">Animasyon</a></li>
+                            </ul>
+                            <i id="closes" class="bi-x-circle"></i>
+                        </div>
+                    </nav>
+
+                    <div class="header-right-links">
+                        <a href="account.html" class="header-account">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <button class="toggle-button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="cart">
+        <div class="container">
+            <div class="cartcontent">
+                <div class="pagetitle">İç Organlara Ait Kelimeler</div>
+                <div class="cartgenel">
+                    <div class="carticerik">
+                        <div class="picture">
+                            <img src="people/internal-organ/brain.png" alt="">
+                        </div>
+                        <div class="answer">Brain 
+                            <i id="btn" onclick="brain.play();" class="fa-solid fa-microphone"></i>
+                        </div>
+                    </div>
+                    <div class="carticerik">
+                        <div class="picture">
+                            <img src="people/internal-organ/heart.png" alt="">
+                        </div>
+                        <div class="answer">Heart
+                            <i id="btn" onclick="heart.play();" class="fa-solid fa-microphone"></i>
+                        </div>
+                    </div>
+                    <div class="carticerik">
+                        <div class="picture">
+                            <img src="people/internal-organ/intestines.png" alt="">
+                        </div>
+                        <div class="answer">İntestines
+                            <i id="btn" onclick="intestines.play();" class="fa-solid fa-microphone"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartgenel">
+                    <div class="carticerik">
+                        <div class="picture">
+                            <img src="people/internal-organ/kidneys.png" alt="">
+                        </div>
+                        <div class="answer">Kidneys
+                            <i id="btn" onclick="kidneys.play();" class="fa-solid fa-microphone"></i>
+                        </div>
+                    </div>
+                        <div class="carticerik">
+                            <div class="picture">
+                                <img src="people/internal-organ/liver.png" alt="">
+                            </div>
+                            <div class="answer">Liver
+                                <i id="btn" onclick="liver.play();" class="fa-solid fa-microphone"></i>
+                            </div>
+                        </div>
+                        <div class="carticerik">
+                            <div class="picture">
+                                <img src="people/internal-organ/lung.png" alt="">
+                            </div>
+                            <div class="answer">Lung
+                                <i id="btn" onclick="lung.play();" class="fa-solid fa-microphone"></i>
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="cartgenel">
+                    <div class="carticerik">
+                        <div class="picture">
+                            <img src="people/internal-organ/stomach.png" alt="">
+                        </div>
+                        <div class="answer">Stomach
+                            <i id="btn" onclick="stomach.play();" class="fa-solid fa-microphone"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="left-title">
+                        <h1>English Word Application</h1>
+                        <h1>For Children</h1>
+                    </div>
+                    <div class="left-info">
+                        <p>05331992489</p>
+                        <p>İstanbul Bağcılar Fatih Mah. 1830.Sok No:3 D3</p>
+                    </div>
+                    <button>
+                        <a href="index.html">Anasayfa</a>
+                    </button>
+                </div>
+                <div class="footer-center">
+                    <div class="more-info">
+                        <ul>
+                            <li><a href="animate.html">Animasyon</a></li>
+                            <li><a href="alıstırmalar.html">Kelime Kartları</a></li>
+                            <li><a href="listening.html">Listening</a></li>
+                            <li><a href="bosluk-doldurma.html">Bosluk Doldurma</a></li>
+                            <li><a href="kelime-esletirme.html">Kelime Eşleştirme</a></li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li><a href="index.html">Anasayfa</a></li>
+                            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                            <li><a href="iletisim.html">İletisim</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="social-medias">
+                        <div class="instagram">
+                           <span><i class="fa-brands fa-instagram"></i></span> <p>Instagram</p>
+                        </div>
+                        <div class="facebook">
+                           <span><i class="fa-brands fa-facebook"></i></span> <p>Facebook</p>
+                        </div>
+                        <div class="twitter">
+                           <span><i class="fa-brands fa-twitter"></i></span><p>Twitter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

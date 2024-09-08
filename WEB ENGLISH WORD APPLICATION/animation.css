@@ -1,0 +1,160 @@
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.container
+{
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+}
+.animate-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1300px;
+    height: 25rem;
+    gap: 15px;
+}
+.card
+{
+    display: block;
+    width: 300px;
+    height: 360px;
+    background-color: rgb(189, 222, 243);
+    border-radius: 15px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.Modal
+{
+    position: fixed;
+    z-index:3;
+    width:550px;
+    height:500px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.Modal .close
+{
+    position: relative;
+    top:95px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    width: 40px;
+    text-align:center;
+    border-radius: 15px;
+    background-color: rgb(85, 83, 83);
+}
+.Modal video
+{
+    width: 100%;
+    height: 100%;
+}
+.hidden
+{
+    display:none;
+}
+
+.card  h1
+{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 10px;
+    color: rgb(52, 50, 50);
+}
+.word-area
+{
+    width: 250px;
+    height: 220px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: wrap;
+    padding: 10px 10px;
+    margin-right:15px ;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+.word-area img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.animate-button
+{
+    width: 200px;
+    height: 50px; 
+    padding-left: 25px;
+}
+button
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(125, 188, 243);
+    margin-top:20px;
+    cursor: pointer;
+    box-shadow: 3px 2px 3px 2px black;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.closes
+{
+    font-size: 30px;
+    position: fixed;
+    top: 25%;
+    color: #fff;
+}
+.close-area
+{
+    cursor: pointer;
+}

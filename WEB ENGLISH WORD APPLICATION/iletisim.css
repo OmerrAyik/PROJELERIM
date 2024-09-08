@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*Map Contact Start*/
+body
+{
+   background-image: url(resim/halftone-background-with-circles_23-2148907689.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.map_contact {
+    height:50rem;
+}
+
+.map_contact_wrapper {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.map_contact_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    width: 100%;
+    padding-top: 70px;
+}
+.menu-title
+{
+    padding-top: 80px;
+    font-size: 23px;
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+    color: #fff;
+}
+.map {
+    width: 38%;
+    height: 500px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.contact {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 44%;
+    height: 500px;
+    background-color: hsl(220, 53%, 31%);
+}
+
+.contact h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.form {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.input_content {
+    border: 1px solid #fffdfe;
+    margin: 15px;
+    padding: 19px 15px;
+}
+
+.input_content input {
+    background-color: hsl(220, 53%, 31%);
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+    color: #ffffff;
+}
+.input_content input ::placeholder
+{
+    color: #fff;
+}
+.input_content i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact_buton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_buton button {
+    padding: 20px 50px;
+    background-color: #fff;
+    color: #5ebee4;
+    border-radius: 35px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact_buton button:hover {
+    background-color: #ebeaea;
+}
+.call
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 35px;
+    background-color: #3455b5;
+    color: #fff;
+    height:500px;
+    width: 30%;
+}
+.call h1
+{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.call_us_area
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.call_us_area p
+{
+    font-size: 19px;
+}
+.location
+{
+    font-size: 22px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.mail
+{
+    font-size: 22px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+@media (max-width:500px)
+{
+    .map_contact_content
+    {
+        display: block;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .map
+    {
+        width:450px;
+        height: 450px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .call
+    {
+        width:450px;
+        height: 450px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .contact
+    {
+        width:450px;
+        height: 450px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .contact button
+    {
+        padding: 8px 20px;
+    }
+}
+/*Map Contact Finish*/

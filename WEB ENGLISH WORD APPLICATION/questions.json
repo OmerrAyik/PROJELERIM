@@ -1,0 +1,28 @@
+[
+    {
+        "id": "1",
+        "text": "Teacher kelimesinin anlamı Nedir.Boşluğa uygun olan kelimeyi seçiniz",
+        "answers": [
+            {
+                "id": "1",
+                "text": "Temizlikçi",
+                "isCorrect": false
+            },
+            {
+                "id": "2",
+                "text": "Astronot",
+                "isCorrect": false
+            },
+            {
+                "id": "3",
+                "text": "Aşçı",
+                "isCorrect": false
+            },
+            {
+                "id": "4",
+                "text": "Öğretmen",
+                "isCorrect": true
+            }
+        ]
+    }
+]

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelime Eşleştirme Oyunu</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #game-container {
+      text-align: center;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    #score {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .word-container {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .word {
+      flex: 1;
+      padding: 20px;
+      margin: 10px;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+      user-select: none;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .correct-match {
+      background-color: #2ecc71 !important;
+      transform: scale(1.1);
+    }
+
+    .incorrect-match {
+      background-color: #e74c3c !important;
+    }
+
+    #feedback {
+      font-size: 20px;
+      margin-top: 20px;
+      color: #27ae60;
+    }
+
+    h1 {
+      color: #3498db;
+    }
+
+    #word-list {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <div id="score">Puan: 0</div>
+
+    <div id="word-list"></div>
+
+    <div id="feedback"></div>
+  </div>
+
+  <script>
+    const words = {
+      'book': 'kitap',
+      'dog': 'köpek',
+      'cat': 'kedi',
+      'sun': 'güneş',
+      'tree': 'ağaç',
+      // Diğer eşleştirmeleri ekleyebilirsiniz.
+    };
+
+    const gameContainer = document.getElementById('game-container');
+    const wordListContainer = document.getElementById('word-list');
+    const scoreElement = document.getElementById('score');
+    const feedbackElement = document.getElementById('feedback');
+
+    let score = 0;
+    let attempts = 0;
+    let selectedWords = [];
+
+    function startGame() {
+      score = 0;
+      attempts = 0;
+      selectedWords = [];
+
+      updateScore();
+
+      renderWordList();
+    }
+
+    function renderWordList() {
+      // İki farklı dildeki kelimeleri karıştır
+      const englishWords = Object.keys(words);
+      const shuffledEnglishWords = shuffle(englishWords);
+      const turkishWords = englishWords.map(word => words[word]);
+      const shuffledTurkishWords = shuffle(turkishWords);
+
+      wordListContainer.innerHTML = '';
+
+      for (let i = 0; i < shuffledEnglishWords.length; i++) {
+        const wordContainer = document.createElement('div');
+        wordContainer.classList.add('word-container');
+
+        const englishWord = shuffledEnglishWords[i];
+        const turkishWord = shuffledTurkishWords[i];
+
+        const englishWordElement = createWordElement(englishWord, 'english');
+        const turkishWordElement = createWordElement(turkishWord, 'turkish');
+
+        wordContainer.appendChild(englishWordElement);
+        wordContainer.appendChild(turkishWordElement);
+
+        wordListContainer.appendChild(wordContainer);
+      }
+
+      enableDragAndDrop();
+    }
+
+    function createWordElement(word, language) {
+      const wordElement = document.createElement('div');
+      wordElement.classList.add('word');
+      wordElement.textContent = word;
+      wordElement.dataset.language = language;
+      wordElement.draggable = true;
+      wordElement.addEventListener('dragstart', dragStart);
+      wordElement.addEventListener('dragover', dragOver);
+      wordElement.addEventListener('drop', drop);
+
+      return wordElement;
+    }
+
+    function enableDragAndDrop() {
+      const wordElements = document.querySelectorAll('.word');
+      wordElements.forEach(element => {
+        element.addEventListener('dragstart', dragStart);
+        element.addEventListener('dragover', dragOver);
+        element.addEventListener('drop', drop);
+      });
+    }
+
+    function dragStart(e) {
+      e.dataTransfer.setData('text/plain', e.target.textContent);
+    }
+
+    function dragOver(e) {
+      e.preventDefault();
+    }
+
+    function drop(e) {
+      e.preventDefault();
+
+      const draggedWord = e.dataTransfer.getData('text/plain');
+      const targetElement = e.target;
+
+      if (targetElement.classList.contains('word')) {
+        const targetWord = targetElement.textContent;
+        const targetLanguage = targetElement.dataset.language;
+
+        const correctWord = getCorrectWord(targetWord, targetLanguage);
+
+        if (correctWord === draggedWord) {
+          handleCorrectMatch(targetElement);
+        } else {
+          handleIncorrectMatch(targetElement);
+        }
+
+        attempts++;
+        updateScore();
+        checkGameEnd();
+      }
+    }
+
+    function handleCorrectMatch(element) {
+      element.classList.add('correct-match');
+      feedbackElement.textContent = 'Doğru eşleştirme! +10 puan';
+      score += 10;
+    }
+
+    function handleIncorrectMatch(element) {
+      element.classList.add('incorrect-match');
+      feedbackElement.textContent = 'Yanlış eşleştirme! -5 puan';
+      score -= 5;
+    }
+
+    function getCorrectWord(word, language) {
+      if (language === 'english') {
+        return words[word];
+      } else {
+        return Object.keys(words).find(key => words[key] === word);
+      }
+    }
+
+    function updateScore() {
+      scoreElement.textContent = `Puan: ${score}`;
+    }
+
+    function checkGameEnd() {
+      if (attempts === Object.keys(words).length * 2) {
+        endGame();
+      }
+    }
+
+    function endGame() {
+      disableDragAndDrop();
+      feedbackElement.textContent = `Oyun bitti! Toplam puan: ${score}`;
+    }
+
+    function disableDragAndDrop() {
+      const wordElements = document.querySelectorAll('.word');
+      wordElements.forEach(element => {
+        element.removeEventListener('dragstart', dragStart);
+        element.removeEventListener('dragover', dragOver);
+        element.removeEventListener('drop', drop);
+      });
+    }
+
+    function shuffle(array) {
+      return array.sort(() => Math.random() - 0.5);
+    }
+
+    // Oyunu başlat
+    startGame();
+  </script>
+</body>
+</html>

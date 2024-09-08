@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+footer
+{
+    position: relative;
+    top: 195rem;
+    width: 100%;
+}
+.hakkimizda
+{
+    height: 60rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+}
+.hakkimizda_page
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 255rem;
+    box-shadow: 1px 2px 2px 1px rgb(163, 161, 161);
+}
+.hakkimizda_page h1
+{
+text-align: center;
+padding-top: 46px;
+}
+.hakkimizda_page p
+{
+    padding-top: 20px;
+    padding-right:20px ;
+    padding-left: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-indent: 55px;
+}
+.hakkimizda_image
+{
+    width:700px;
+    height:370px;
+    position: relative;
+    margin-top: 35px;
+    left: 260px;
+}
+.hakkimizda_image img{
+    width: 100%;
+    height:100%;
+}
+.hak_title h1
+{
+    padding-bottom: 18px;
+}
+.paragraf .bold
+{
+  font-weight: bold;
+  padding-left: 30px;
+  line-height: 40px;
+}
+.paragraf a
+{
+    color: lightskyblue;
+}

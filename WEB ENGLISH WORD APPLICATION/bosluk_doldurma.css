@@ -1,0 +1,102 @@
+body {
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#game-container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    height: 100vh;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333333;
+}
+
+.word-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.option {
+    width: 45%;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.option img {
+    max-width: 100%;
+    max-height: 100px;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.incorrect {
+    background-color: #FF0000;
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.footer
+{
+    position: relative;
+    top: 1550px;
+}

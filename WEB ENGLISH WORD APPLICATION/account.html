@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--! Boostrap İcon cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--! style css-->
+    <!--!Font Awesome İcons start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/main.css">
+    <!--!Font Awesome İcons end-->
+
+    <!--! Jquery CDNJS START-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--! Jquery CDNJS END-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="account.css">
+    <title>Account</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="genel-account-wrapper">
+            <div class="left-info">
+                <div class="logo">
+                    <a href="index.html"><img src="resim/logo.png" alt=""></a>
+                </div>
+                <nav>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>
+                                    Anasayfa</a></li>
+                            <li><a href="alıstırmalar.html"> <i class="fa fa-book"
+                                        aria-hidden="true"></i>Alıştırmalar</a></li>
+                            <li><a href="bosluk-doldurma.html" class="active"><i class="fa fa-trophy"
+                                        aria-hidden="true"></i>Boşluk Doldurma</a></li>
+                            <li><a href="listening.html"><i class="fa fa-headphones" aria-hidden="true"></i>Dinleme</a>
+                            </li>
+                            <li><a href="animate.html"><i class="bi bi-disc-fill"></i>Animasyon</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="exit">
+                    <ul>
+                        <li><a href="index.html">Çıkış Yap<i class="bi bi-box-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-info">
+                <div class="edit_profile-wrapper">
+                    <div class="edit-title">
+                        <h1>Profili Düzenle</h1>
+                    </div>
+                    <div class="edit-image">
+                        <div class="profile-image">
+                            <p>Profil Resmi</p>
+                            <img src="resim/omer.edit.png" alt="">
+                        </div>
+                        <div class="edit-buttons">
+                            <div class="buton"><input type="file"></div>
+                            <button class="remove">Resmi Sil</button>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                            <div class="name-surname">
+                                <div class="name">
+                                    <p>Name</p>
+                                    <input type="text" class="text" placeholder="Adınızı Giriniz">
+                                </div>
+                                <div class="surname">
+                                    <p>Surname</p>
+                                    <input type="text" class="text" placeholder="Soyadınızı Giriniz">
+                                </div>
+                            </div>
+                            <div class="email-phoneNo">
+                                <div class="email">
+                                    <p>Email</p>
+                                    <input type="text" class="text" placeholder="Adınızı Giriniz">
+                                </div>
+                                <div class="phonenumber">
+                                    <p>Phone Number</p>
+                                    <input type="text" class="text" placeholder="Soyadınızı Giriniz">
+                                </div>
+                            </div>
+                            <div class="addres">
+                                <div class="adres-title"><p>Adres</p></div>
+                               <textarea name="adres" id="" cols="70" rows="4"></textarea>
+                            </div>
+                            <div class="about">
+                                <div class="about-title"><p>Hakkımda</p></div>
+                               <textarea name="about" id="" cols="70" rows="4"></textarea>
+                            </div>
+                            <div class="kaydet">
+                                <button id="kaydet" type="submit">Kaydet</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

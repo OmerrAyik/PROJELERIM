@@ -1,0 +1,388 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pratik-title
+{
+    text-align: center;
+    font-size: 22px;
+    color: #2E8CCA;
+}
+.genel-pratik
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.genelcontent
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.praticbuton
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 140px;
+}
+.solreklam
+{
+    width: 155px;
+    height: 1500px;
+    background-image: url(gif/gif-for-happy-52650-129824.gif);
+}
+
+.pratikcontent
+{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sagreklam
+{
+    width: 155px;
+    height: 1500px;
+    background-image: url(gif/gif-for-happy-52650-129824.gif);
+}
+.home
+{
+    
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/home.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.home:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+.home-content
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(70, 142, 197);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.home-title
+{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home-title h1
+{
+    color: #ffff;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 8px;
+}
+#home-icon
+{
+    font-size: 30px;
+    color: #fff;
+}
+
+/*people start*/
+.people
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/people.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.people:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*people finish*/
+
+
+/*Food Start*/
+.food
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/food.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.food:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*Food Finish*/
+
+/*Apperance*/
+.apperance
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/apperance.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.apperance:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*Apperance finish*/
+
+/*Environmental start */
+.environmental
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/environmen.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.environmental:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*Environmental finish */
+
+/*Transport start */
+.Transport
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/transport.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Transport:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*Transport finish */
+
+
+
+/*Education start */
+.Education
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/education.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Education:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*Education finish */
+
+
+/*Education start */
+.Work
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/work.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Work:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*Work finish */
+
+/*Shooping start */
+.Shooping
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/shooping.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Shooping:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*Shooping finish */
+
+/*Art start */
+.Art
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/art.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Art:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*Art finish */
+
+/*Health start */
+.Health
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/health.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Health:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*Health finish */
+
+/*Sport start */
+.Sport
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/Sport.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Sport:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*Sport finish */
+
+/*Leisure start */
+.Leisure
+{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    margin-left: 40px;
+    width: 400px;
+    height: 260px;
+    background-image: url(resim/genel-pratik-syf/Leisure.png);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Leisure:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1.2s ease;
+}
+/*Leisure finish */
+@media (max-width:500px)
+{
+    .pratikcontent
+    {
+        display: block;
+    }
+    .solreklam
+    {
+        display: none;
+    }
+    .sagreklam
+    {
+        display: none;
+    }
+}
+@media (max-width:768px) 
+{
+    .pratikcontent
+    {
+        display: block;
+    }
+    .solreklam
+    {
+        display: none;
+    }
+    .sagreklam
+    {
+        display: none;
+    }
+}
+@media (max-width:992px) 
+{
+    .pratikcontent
+    {
+        display: block;
+    }
+    .solreklam
+    {
+        display: none;
+    }
+    .sagreklam
+    {
+        display: none;
+    }
+}

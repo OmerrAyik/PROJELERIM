@@ -1,0 +1,29 @@
+Hoş Geldiniz!
+
+Merhaba! Biz [Uygulama Adı] ekibi olarak, dil öğrenimini daha etkili ve eğlenceli hale getirmek amacıyla bu uygulamayı geliştirdik. İşte [Uygulama Adı] hakkında daha fazla bilgi:
+
+Misyonumuz:
+
+[Uygulama Adı], dil öğrenenlere kelime bilgilerini güçlendirmek ve İngilizce dilini daha akıcı bir şekilde kullanmalarını sağlamak için tasarlanmıştır. Amacımız, kullanıcılarımıza kişiselleştirilmiş, etkileşimli ve motive edici bir öğrenme deneyimi sunarak dil becerilerini geliştirmelerine yardımcı olmaktır.
+
+Öne Çıkan Özelliklerimiz:
+
+Kişiselleştirilmiş Öğrenme Yöntemi: Her kullanıcıya uygun öğrenme tarzına göre adapte olan bir sistem.
+Günlük Pratik: Kullanıcıları düzenli olarak öğrenmeye teşvik eden hatırlatıcılar ve günlük pratik fırsatları.
+Eğlenceli Quizler: İnteraktif quizler ve oyunlar aracılığıyla öğrenmeyi destekleyen eğlenceli bir yaklaşım.
+İstatistik ve İlerleme Takibi: Kullanıcıların ilerlemelerini izleyebilecekleri detaylı istatistikler ve raporlar.
+Neden [Uygulama Adı]?
+
+[Uygulama Adı], dil öğrenenlerin sıkıcı olabilen kelime ezberini daha eğlenceli ve etkili hale getirmeyi amaçlar. Kullanıcılarımıza dil becerilerini geliştirmek için bir araç sunmak, onların günlük hayatlarında daha fazla güvenle İngilizce konuşmalarına yardımcı olmak en büyük motivasyonumuzdur.
+
+Geliştirici Ekibimiz:
+
+[Uygulama Adı]'nin arkasında, dil eğitimine olan tutkumuzu paylaşan bir ekip bulunmaktadır. Geliştirici ekibimiz, kullanıcı geri bildirimlerini değerlendirerek ve uygulamamızı sürekli iyileştirerek en iyi deneyimi sunma taahhüdündedir.
+
+İletişim:
+
+Herhangi bir soru, öneri veya geri bildirim için bize ulaşmaktan çekinmeyin. Sizinle dil öğrenme yolculuğunuzu daha iyi hale getirmek için çalışmak istiyoruz!
+
+Teşekkür ederiz ve başarılar dileriz!
+
+[Uygulama Adı] Ekib
