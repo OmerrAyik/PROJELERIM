@@ -1,0 +1,80 @@
+*
+{
+    box-sizing:  border-box;
+}
+html
+{
+    font-size: 16px;
+    font-family: 'verdana';
+}
+body
+{
+    background-color: grey;
+    color: #fff;
+    height: 100%;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;/*1 rem: 16 px*/
+}
+details
+{
+    font-size: 16px;
+    margin:0 auto;
+    width: 100%;
+    background-color:#444 ;
+    position: relative;
+    max-width: 600px;
+    border: 1px solid #de3a20;
+    transition: all 300ms ease-in-out ;
+}
+details:hover
+{
+    border: 1ps solid ;
+}
+.content
+{
+    padding: 10px 20px;
+    line-height: 1.5;
+}
+summary
+{
+    user-select: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    list-style: none;
+    padding: 16px;
+    align-items: center;
+}
+summary:hover .title
+{
+opacity: 1;
+}
+summary::marker
+{
+    display: none;
+}
+summary:focus
+{
+    outline: none;
+}
+summary:hover #expand-icon
+{
+    opacity: 1;
+}
+.title
+{
+    color: #ccc;
+    width: 90%;
+    opacity: 0.6;
+    transition: 300ms all;
+}
+#expand-icon
+{
+    opacity: 0.6;
+    font-size: 22px;
+}
